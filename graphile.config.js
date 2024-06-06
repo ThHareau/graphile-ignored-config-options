@@ -1,6 +1,6 @@
 
 const connectionString =
-  'postgres://postgres:postgrespassword@localhost:5432/graphile-test';
+  'postgres://postgres:postgrespassword@localhost:5432/concurrent-jobs-options';
 
 const preset = {
   worker: {

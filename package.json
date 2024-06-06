@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "worker": "LOG_LEVEL=debug graphile-worker",
-    "enqueue": "psql postgres://postgres:postgrespassword@localhost:5432/graphile-test -c \"SELECT graphile_worker.add_job('slow_job');\""
+    "enqueue": "psql postgres://postgres:postgrespassword@localhost:5432/concurrent-jobs-options -c \"SELECT graphile_worker.add_job('slow_job');\""
   },
   "author": "",
   "license": "ISC",
