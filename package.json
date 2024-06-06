@@ -1,0 +1,16 @@
+{
+  "name": "graphile-test-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "worker": "LOG_LEVEL=debug graphile-worker",
+    "enqueue": "psql postgres://postgres:postgrespassword@localhost:5432/graphile-test -c \"SELECT graphile_worker.add_job('slow_job');\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphile-worker": "0.16.6"
+  }
+}
